@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "TwitterApiKey": "<your Twitter API Key>",
+    "TwitterApiSecret": "<your Twitter API Secret>",
+    "TwitterAccessToken": "<your Twitter Access Token>",
+    "TwitterAccessTokenSecret": "<your Twitter Access Token Secret>",
+    "StorageConnectionString": "<your ADLS Gen2 storage account connection string>",
+    "StorageContinerName": "<your ADLS Gen2 Filesystem (Container) name>",
+    "TwMaxTimeSpanMins": "9",
+    "TwMaxCount": "1000",
+    "TwCommitInterval": "100",
+    "TwKeywords": "コロナ 大変"
+  }
+}
