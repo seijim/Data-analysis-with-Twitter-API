@@ -9,5 +9,5 @@
    <tr><td>Step3</td><td>Write Parquet file to local storage</td><td>C# Console App (.NET Core/.NET 5)</td><td>https://qiita.com/dokums/items/31c8d0f30e3796bfc648</td></tr>
    <tr><td>Step4</td><td>Write Parquet file to Azure Data Lake Storage Gen2 (ADLS Gen2)</td><td>C# Console App (.NET Core/.NET 5)</td><td>https://qiita.com/dokums/items/8285b53446300b66d9e1</td></tr>
    <tr><td>Step5</td><td>Azure Functions with Twitter API & ADLS Gen2</td><td>Azure Function App (C#)</td><td>https://qiita.com/dokums/items/3622bf1dc599fcbc5329</td></tr>
-   <tr><td>Step6</td><td>SQL queries to Parquet files</td><td>Azure Synapse Analytics - Serverless SQL</td><td>https://qiita.com/dokums/items/a26d70dc9e6b080bd187</td></tr>
+   <tr><td>Step6</td><td>SQL queries to Parquet files in ADLS Gen2</td><td>Azure Synapse Analytics - Serverless SQL</td><td>https://qiita.com/dokums/items/a26d70dc9e6b080bd187</td></tr>
 </table>
