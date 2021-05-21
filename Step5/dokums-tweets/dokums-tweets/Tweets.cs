@@ -23,7 +23,7 @@ namespace dokums_tweets
         private static string storageConnectionString;
         private static string storageContainerName;
         private static TimeSpan maxTimeSpan = new TimeSpan(1, 0, 0);  // Max lifecycle time per launch (Check 'functionTimeout' in host.json)
-        //private static int maxCount = 672;      // 500,000ÅÄ31ÅÄ24
+        //private static int maxCount = 672;      // 500,000¬Å‚Ç¨31¬Å‚Ç¨24
         private static int maxCount = 1000;       // Max number of Tweets retrieved per launch (Default:1000)
         private static int commitInterval = 100;  // Max number of Tweets retrieved per loop (Default:100)
         private static int counter;
@@ -46,7 +46,7 @@ namespace dokums_tweets
             storageContainerName = Environment.GetEnvironmentVariable("StorageContinerName");
             string twMaxTimeSpanMins = Environment.GetEnvironmentVariable("TwMaxTimeSpanMins");
             if (twMaxTimeSpanMins != null)
-                maxTimeSpan = new TimeSpan(int.Parse(twMaxTimeSpanMins), 0, 0);
+                maxTimeSpan = new TimeSpan(0, int.Parse(twMaxTimeSpanMins), 0);
             string twMaxCount = Environment.GetEnvironmentVariable("TwMaxCount");
             if (twMaxCount != null)
                 maxCount = int.Parse(twMaxCount);
@@ -101,7 +101,7 @@ namespace dokums_tweets
 
                     // Add filters
                     log.LogInformation($"***** Filtered Keywords : {filteredKeywords}");
-                    var keywords = filteredKeywords.Split(new char[] { ' ', 'Å@' });
+                    var keywords = filteredKeywords.Split(new char[] { ' ', '¬Å@' });
                     foreach (var keyword in keywords)
                     {
                         stream.AddTrack(keyword);
